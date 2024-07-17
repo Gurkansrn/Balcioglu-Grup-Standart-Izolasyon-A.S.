@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balcıoğlu İzolasyon - İş Başvuru Formu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.jobs.css">
+    <link rel="stylesheet" href="submit_form.php">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="images/loogoo.png" alt="logo">
+            </div>
+            <nav class="navbar-menu">
+                <ul>
+                    <li><a href="home.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="projects.html">Projeler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li class="last-item"><a href="careers.html">Kariyer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px">
+        <h1 style="margin-left: 75px;">İş Başvuru Formu</h1>
+        <form action="submit_form.php" method="POST" class="job-application-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Adınız Soyadınız</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon Numaranız</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Ön Yazınız</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="position">Başvurulan İş Pozisyonu</label><br>
+                <select id="position" name="position" required>
+                    <option value="">Lütfen bir iş pozisyonu seçiniz</option>
+                    <option value="Elektrik Mühendisi">Elektrik Mühendisi</option>
+                    <option value="Finans Uzmanı">Finans Uzmanı</option>
+                    <option value="İnşaat Mühendisi">İnşaat Mühendisi</option>
+                    <option value="İç Mimar">İç Mimar</option>
+                    <option value="Kimyasal Mühendis">Kimyasal Mühendis</option>
+                    <option value="Mekanik Mühendisi">Mekanik Mühendisi</option>
+                    <option value="Mimar">Mimar</option>
+                    <option value="Operasyon Müdürü">Operasyon Müdürü</option>
+                    <option value="Satış Temsilcisi">Satış Temsilcisi</option>
+                    <option value="Web Tasarımcısı">Web Tasarımcısı</option>
+                    <option value="Yazılım Geliştirici">Yazılım Geliştirici</option>
+                    <option value="Üretim Operatörü">Üretim Operatörü</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="resume">Özgeçmiş Yükle</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                <small>Sadece PDF, DOC veya DOCX formatında dosya yükleyebilirsiniz.</small>
+            </div>
+            <button type="submit">Başvur</button>
+        </form>
+    </div>
+
+    <footer style="background-color: #2C3E50; color: #fff; text-align: center; padding: 20px; margin-top: 40px;">
+        <div id="contact">
+            <h3 style="margin-bottom: 20px; font-size: 1.5rem;">İletişim</h3>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <p style="margin-bottom: 10px;">Adres: Fevzipaşa Mah. Kınalı Kavşağı Cad. No:123 ve 123/1 Silivri / İstanbul</p>
+                <p style="margin-bottom: 10px;">Telefon: +90 444 88 78</p>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <p style="margin-right: 285px;">Email: bilgi@standartizolasyon.com</p>
+                <p style="margin-left: 3px;">Faks:  +90 212 670 51 51</p>
+            </div>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.9rem;">&copy; 2024 Balcıoğlu İzolasyon</p>
+    </footer>
+</body>
+</html>

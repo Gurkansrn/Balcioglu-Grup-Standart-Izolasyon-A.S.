@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.section-header{
+    margin-top: 100px;
+}
+
+.contact-infoo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-infoo h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-detailss {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.contact-itemm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-itemm i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.contact-itemm p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.contact-itemm {
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-itemm:hover {
+    transform: translateX(10px); 
+}
+
+
+.contact-section {
+    padding: 50px;
+    margin-bottom: 0px;
+    background-color: #f9f9f9;
+}
+
+.contact-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow-us {
+    width: 30%;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-form {
+    width: 60%;
+}
+
+h2 {
+    color: #333;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-info p,
+.contact-form form {
+    margin: 20px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #ff6600;
+}
+
+.contact-infoo i {
+    margin-right: 10px;
+    color: #ff6600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e55a00;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 450px; 
+    margin-top: 50px; 
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+}
+

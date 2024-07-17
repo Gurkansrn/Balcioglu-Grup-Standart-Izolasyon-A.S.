@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 80px; 
+}
+
+.bc{
+   color:  #34495e;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: block;
+    width: 100%;
+}
+
+.career-intro-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.career-intro-item {
+    font-size: 1.0rem;
+    line-height: 1.6;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.career-intro-item:hover {
+    transform: translateX(5px); 
+}
+
+.career-intro p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.job-opportunities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.job-card {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.job-description {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.job-apply {
+    display: inline-block;
+    background-color:#EB984E ;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.job-apply:hover {
+    background-color:#E67E22 ;
+}
+
